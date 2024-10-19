@@ -48,8 +48,8 @@ module sbox_tb();
         $display("Output = %b\n", out);
 
         for (i = 0; i < 10; i = i + 1) begin  // Running 10 random test cases
-            data_in = $random % 64;  // Generate random 6-bit number (0-63)
-            #10;  // Wait for the output to settle
+            data_in = $random % 64;
+            #10;
             $display("Test Case %0d: Input = %b, Output = %b", i, data_in, out);
         end
 
